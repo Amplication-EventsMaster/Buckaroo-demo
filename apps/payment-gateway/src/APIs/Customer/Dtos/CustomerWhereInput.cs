@@ -12,5 +12,7 @@ public class CustomerWhereInput
 
     public List<string>? Payments { get; set; }
 
+    public string? Phone { get; set; }
+
     public DateTime? UpdatedAt { get; set; }
 }

@@ -28,6 +28,7 @@ public abstract class CustomersServiceBase : ICustomersService
             CreatedAt = createDto.CreatedAt,
             FirstName = createDto.FirstName,
             LastName = createDto.LastName,
+            Phone = createDto.Phone,
             UpdatedAt = createDto.UpdatedAt
         };
 

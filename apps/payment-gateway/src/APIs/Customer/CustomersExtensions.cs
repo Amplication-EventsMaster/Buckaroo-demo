@@ -14,6 +14,7 @@ public static class CustomersExtensions
             Id = model.Id,
             LastName = model.LastName,
             Payments = model.Payments?.Select(x => x.Id).ToList(),
+            Phone = model.Phone,
             UpdatedAt = model.UpdatedAt,
         };
     }
@@ -27,7 +28,8 @@ public static class CustomersExtensions
         {
             Id = uniqueId.Id,
             FirstName = updateDto.FirstName,
-            LastName = updateDto.LastName
+            LastName = updateDto.LastName,
+            Phone = updateDto.Phone
         };
 
         if (updateDto.CreatedAt != null)

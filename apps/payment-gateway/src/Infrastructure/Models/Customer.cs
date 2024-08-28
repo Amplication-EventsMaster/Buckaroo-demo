@@ -21,6 +21,9 @@ public class CustomerDbModel
 
     public List<PaymentDbModel>? Payments { get; set; } = new List<PaymentDbModel>();
 
+    [StringLength(1000)]
+    public string? Phone { get; set; }
+
     [Required()]
     public DateTime UpdatedAt { get; set; }
 }
